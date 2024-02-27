@@ -1,3 +1,11 @@
+# Lit Fork Notes
+
+This is a fork of https://github.com/stytchauth/stytch-nextjs-app-router-example that has been modified to only support Sign in with Google, and then after the user signs in with Google, we mint a PKP for them and try to sign using it using Lit Protocol.
+
+This is a good example of how to do sign in with Google via Stytch.
+
+Original README below:
+
 # Stytch Next.js App Router example application
 
 <p align="center">
@@ -9,7 +17,6 @@
 This example application demonstrates how one may use Stytch within a Next.js 13 application using the new [App Router](https://nextjs.org/docs/app/building-your-application/routing#the-app-router). If you'd like to see an example of Stytch with Next.js's Page Router, you can find it [here](https://github.com/stytchauth/stytch-nextjs-example).
 
 In Next.js 13's App Router, you may use both [Client](https://nextjs.org/docs/getting-started/react-essentials#client-components) and [Server](https://nextjs.org/docs/getting-started/react-essentials#server-components) components. **This example app primarily uses Client components, however you can see an example of a Server component in `/src/components/Authenticate.js`**. Our [Next.js SDK](https://stytch.com/docs/sdks/javascript-sdk) is compatible with Client components, so anywhere you use it, ensure that you include `'use client'` at the top of the component. If you'd like to use Server components, you may use our [Node Backend SDK](https://www.npmjs.com/package/stytch) to power your authentication flow.
-
 
 This application features Email Magic Links and Google OAuth authentication. You can use this application's source code as a learning resource, or use it as a jumping off point for your own project. We are excited to see what you build with Stytch!
 

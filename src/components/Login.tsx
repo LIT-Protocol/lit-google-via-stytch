@@ -25,13 +25,8 @@ const Login = () => {
   };
 
   const config = {
-    products: [Products.emailMagicLinks, Products.oauth],
-    emailMagicLinksOptions: {
-      loginRedirectURL: getDomainFromWindow() + '/authenticate',
-      loginExpirationMinutes: 60,
-      signupRedirectURL: getDomainFromWindow() + '/authenticate',
-      signupExpirationMinutes: 60,
-    },
+    products: [ Products.oauth],
+
     oauthOptions: {
       providers: [{ type: "google" }],
       loginRedirectURL: getDomainFromWindow() + '/authenticate',
